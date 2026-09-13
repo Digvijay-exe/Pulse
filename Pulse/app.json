@@ -1,0 +1,29 @@
+{
+  "app": {
+    "appId": 1000001,
+    "appName": "Pulse Sensor Lab",
+    "appName_en-US": "Pulse Sensor Lab",
+    "appType": "app",
+    "version": {
+      "code": 1,
+      "name": "1.0.0"
+    },
+    "icon": "icon.png"
+  },
+  "permissions": [
+    "device:os.sensor.accelerometer",
+    "device:os.sensor.gyroscope",
+    "device:os.fs"
+  ],
+  "targets": {
+    "amazfit-active-edge": {
+      "module": {
+        "page": {
+          "pages": [
+            "pages/sensorLab"
+          ]
+        }
+      }
+    }
+  }
+}
