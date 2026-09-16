@@ -1,6 +1,7 @@
 {
-  "name": "",
-  "description": "",
+  "name": "Pulse",
+  "description": "AI-Driven IMU-Based Kinematic Fatigue Tracker for Amazfit Active Edge",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
+

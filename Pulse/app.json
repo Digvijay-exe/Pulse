@@ -1,29 +1,53 @@
 {
+  "configVersion": "v3",
   "app": {
-    "appId": 1000001,
-    "appName": "Pulse Sensor Lab",
-    "appName_en-US": "Pulse Sensor Lab",
+    "appId": 21017,
+    "appName": "Pulse",
     "appType": "app",
     "version": {
-      "code": 1,
-      "name": "1.0.0"
+      "code": 4,
+      "name": "4.0.0"
     },
-    "icon": "icon.png"
+    "icon": "icon.png",
+    "vender": "zepp",
+    "description": "Pulse Kinematic Fatigue Tracker"
   },
   "permissions": [
     "device:os.sensor.accelerometer",
-    "device:os.sensor.gyroscope",
-    "device:os.fs"
+    "device:os.sensor.gyroscope"
   ],
+  "runtime": {
+    "apiVersion": {
+      "compatible": "3.0.0",
+      "target": "3.0.0",
+      "minVersion": "3.0"
+    }
+  },
   "targets": {
-    "amazfit-active-edge": {
+    "default": {
       "module": {
         "page": {
           "pages": [
+            "pages/home",
+            "pages/calibration",
+            "pages/workout",
+            "pages/setResult",
             "pages/sensorLab"
           ]
         }
-      }
+      },
+      "platforms": [
+        {
+          "st": "r",
+          "dw": 360
+        }
+      ]
     }
-  }
+  },
+  "i18n": {
+    "en-US": {
+      "appName": "Pulse"
+    }
+  },
+  "defaultLanguage": "en-US"
 }
