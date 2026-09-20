@@ -1,2 +1,0 @@
-msgid "pulse"
-msgstr "Pulse"
