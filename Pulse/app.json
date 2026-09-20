@@ -1,0 +1,50 @@
+{
+  "configVersion": "v3",
+  "app": {
+    "appId": 21017,
+    "appName": "Pulse",
+    "appType": "app",
+    "version": {
+      "code": 12,
+      "name": "2.4.0"
+    },
+    "icon": "icon.png",
+    "vender": "zepp",
+    "description": "Pulse Kinematics"
+  },
+  "permissions": [
+    "device:os.accelerometer",
+    "device:os.gyroscope",
+    "device:os.fs"
+  ],
+  "runtime": {
+    "apiVersion": {
+      "compatible": "3.0.0",
+      "target": "3.0.0",
+      "minVersion": "3.0"
+    }
+  },
+  "targets": {
+    "default": {
+      "module": {
+        "page": {
+          "pages": [
+            "pages/sensorLab"
+          ]
+        }
+      },
+      "platforms": [
+        {
+          "st": "r",
+          "dw": 360
+        }
+      ]
+    }
+  },
+  "i18n": {
+    "en-US": {
+      "appName": "Pulse"
+    }
+  },
+  "defaultLanguage": "en-US"
+}
